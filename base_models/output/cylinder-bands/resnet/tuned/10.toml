@@ -1,0 +1,25 @@
+seed = 10
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/cylinder-bands'
+
+[model]
+activation = 'relu'
+d = 463
+d_embedding = 421
+d_hidden_factor = 3.080392956062708
+hidden_dropout = 0.3504268615667025
+n_layers = 5
+normalization = 'batchnorm'
+residual_dropout = 0.2373430573011905
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0002284872481822989
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1.021731278409643e-05

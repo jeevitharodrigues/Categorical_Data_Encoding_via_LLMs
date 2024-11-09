@@ -1,0 +1,21 @@
+seed = 4
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/cylinder-bands_algo_3'
+
+[model]
+d_embedding = 376
+d_layers = [ 348, 228, 228, 228, 501 ]
+dropout = 0.0
+
+[training]
+batch_size = 128
+eval_batch_size = 32
+lr = 0.003641931731996259
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0008356339903628834
+

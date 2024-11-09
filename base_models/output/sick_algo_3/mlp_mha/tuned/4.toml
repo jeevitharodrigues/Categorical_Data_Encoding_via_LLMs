@@ -1,0 +1,20 @@
+seed = 4
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/sick_algo_3'
+
+[model]
+d_embedding = 152
+d_layers = [ 166, 26 ]
+dropout = 0.1686980802086342
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0008800667561385505
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

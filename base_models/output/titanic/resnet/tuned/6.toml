@@ -1,0 +1,25 @@
+seed = 6
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/titanic'
+
+[model]
+activation = 'relu'
+d = 358
+d_embedding = 512
+d_hidden_factor = 3.939071888925459
+hidden_dropout = 0.4896437281538122
+n_layers = 6
+normalization = 'batchnorm'
+residual_dropout = 0.1885775155762346
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0002043476961637888
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

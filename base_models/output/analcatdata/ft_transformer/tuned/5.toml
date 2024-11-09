@@ -1,0 +1,27 @@
+seed = 5
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/analcatdata'
+
+[model]
+activation = 'reglu'
+attention_dropout = 0.2368040226368552
+d_ffn_factor = 2.268488170625955
+d_token = 296
+ffn_dropout = 0.3902645881432277
+initialization = 'kaiming'
+n_heads = 8
+n_layers = 3
+prenormalization = true
+residual_dropout = 0.1279842042655048
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 1.935114088559527e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0006823493012435792

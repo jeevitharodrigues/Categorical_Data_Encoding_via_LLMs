@@ -1,0 +1,133 @@
+{
+    "dataset": "credit-g_algo_3",
+    "algorithm": "mlp_mha",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/credit-g_algo_3"
+        },
+        "model": {
+            "d_embedding": 363,
+            "d_layers": [
+                434,
+                397,
+                397,
+                177
+            ],
+            "dropout": 0.3268509357943775
+        },
+        "seed": 4,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0009679892329238409,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": null,
+            "torch.version.cuda": "10.1",
+            "torch.backends.cudnn.version()": 7603,
+            "torch.cuda.nccl.version()": 2708,
+            "driver": "470.256.02"
+        }
+    },
+    "epoch_size": 4,
+    "n_parameters": 123563877,
+    "best_epoch": 9,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.6331658291457286,
+                "recall": 0.5228215767634855,
+                "f1-score": 0.5727272727272726,
+                "support": 241
+            },
+            "1": {
+                "precision": 0.8086522462562395,
+                "recall": 0.8694096601073346,
+                "f1-score": 0.8379310344827587,
+                "support": 559
+            },
+            "accuracy": 0.765,
+            "macro avg": {
+                "precision": 0.7209090377009841,
+                "recall": 0.69611561843541,
+                "f1-score": 0.7053291536050157,
+                "support": 800
+            },
+            "weighted avg": {
+                "precision": 0.7557869631016981,
+                "recall": 0.765,
+                "f1-score": 0.7580384012539185,
+                "support": 800
+            },
+            "roc_auc": 0.8232023693762572,
+            "score": 0.765
+        },
+        "val": {
+            "0": {
+                "precision": 0.7777777777777778,
+                "recall": 0.6774193548387096,
+                "f1-score": 0.7241379310344828,
+                "support": 31
+            },
+            "1": {
+                "precision": 0.863013698630137,
+                "recall": 0.9130434782608695,
+                "f1-score": 0.8873239436619719,
+                "support": 69
+            },
+            "accuracy": 0.84,
+            "macro avg": {
+                "precision": 0.8203957382039574,
+                "recall": 0.7952314165497896,
+                "f1-score": 0.8057309373482273,
+                "support": 100
+            },
+            "weighted avg": {
+                "precision": 0.8365905631659056,
+                "recall": 0.84,
+                "f1-score": 0.8367362797474501,
+                "support": 100
+            },
+            "roc_auc": 0.85273492286115,
+            "score": 0.84
+        },
+        "test": {
+            "0": {
+                "precision": 0.5416666666666666,
+                "recall": 0.4642857142857143,
+                "f1-score": 0.5,
+                "support": 28
+            },
+            "1": {
+                "precision": 0.8026315789473685,
+                "recall": 0.8472222222222222,
+                "f1-score": 0.8243243243243243,
+                "support": 72
+            },
+            "accuracy": 0.74,
+            "macro avg": {
+                "precision": 0.6721491228070176,
+                "recall": 0.6557539682539683,
+                "f1-score": 0.6621621621621622,
+                "support": 100
+            },
+            "weighted avg": {
+                "precision": 0.729561403508772,
+                "recall": 0.74,
+                "f1-score": 0.7335135135135136,
+                "support": 100
+            },
+            "roc_auc": 0.7435515873015873,
+            "score": 0.74
+        }
+    },
+    "time": "0:06:06"
+}

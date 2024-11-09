@@ -1,0 +1,20 @@
+seed = 0
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/analcatdata_algo_3'
+
+[model]
+d_embedding = 417
+d_layers = [ 286, 339, 339, 339, 285 ]
+dropout = 0.1355228122710398
+
+[training]
+batch_size = 128
+eval_batch_size = 32
+lr = 0.001598276282604273
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 2.858445910603954e-05

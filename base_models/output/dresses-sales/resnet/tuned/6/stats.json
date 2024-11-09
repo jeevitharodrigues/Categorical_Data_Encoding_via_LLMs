@@ -1,0 +1,125 @@
+{
+    "dataset": "dresses-sales",
+    "algorithm": "resnet",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/dresses-sales"
+        },
+        "model": {
+            "activation": "relu",
+            "d": 236,
+            "d_embedding": 111,
+            "d_hidden_factor": 3.145568099117258,
+            "hidden_dropout": 0.3013816880358219,
+            "n_layers": 4,
+            "normalization": "batchnorm",
+            "residual_dropout": 0.2118273996694524
+        },
+        "seed": 6,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0008663279761354553,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {},
+    "epoch_size": 2,
+    "n_parameters": 1714015,
+    "best_epoch": 12,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7368421052631579,
+                "recall": 1.0,
+                "f1-score": 0.8484848484848484,
+                "support": 238
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.5029239766081871,
+                "f1-score": 0.669260700389105,
+                "support": 171
+            },
+            "accuracy": 0.7921760391198044,
+            "macro avg": {
+                "precision": 0.868421052631579,
+                "recall": 0.7514619883040936,
+                "f1-score": 0.7588727744369768,
+                "support": 409
+            },
+            "weighted avg": {
+                "precision": 0.8468665551409085,
+                "recall": 0.7921760391198044,
+                "f1-score": 0.7735525029484862,
+                "support": 409
+            },
+            "roc_auc": 0.9800604452307239,
+            "score": 0.7921760391198044
+        },
+        "val": {
+            "0": {
+                "precision": 0.5789473684210527,
+                "recall": 0.9565217391304348,
+                "f1-score": 0.721311475409836,
+                "support": 23
+            },
+            "1": {
+                "precision": 0.8571428571428571,
+                "recall": 0.2727272727272727,
+                "f1-score": 0.41379310344827586,
+                "support": 22
+            },
+            "accuracy": 0.6222222222222222,
+            "macro avg": {
+                "precision": 0.7180451127819549,
+                "recall": 0.6146245059288538,
+                "f1-score": 0.5675522894290559,
+                "support": 45
+            },
+            "weighted avg": {
+                "precision": 0.714954051796157,
+                "recall": 0.6222222222222222,
+                "f1-score": 0.5709691602286289,
+                "support": 45
+            },
+            "roc_auc": 0.5968379446640316,
+            "score": 0.6222222222222222
+        },
+        "test": {
+            "0": {
+                "precision": 0.625,
+                "recall": 0.8620689655172413,
+                "f1-score": 0.7246376811594203,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.3333333333333333,
+                "recall": 0.11764705882352941,
+                "f1-score": 0.1739130434782609,
+                "support": 17
+            },
+            "accuracy": 0.5869565217391305,
+            "macro avg": {
+                "precision": 0.47916666666666663,
+                "recall": 0.4898580121703854,
+                "f1-score": 0.4492753623188406,
+                "support": 46
+            },
+            "weighted avg": {
+                "precision": 0.5172101449275361,
+                "recall": 0.5869565217391305,
+                "f1-score": 0.5211090107120352,
+                "support": 46
+            },
+            "roc_auc": 0.48275862068965514,
+            "score": 0.5869565217391305
+        }
+    },
+    "time": "0:00:03"
+}

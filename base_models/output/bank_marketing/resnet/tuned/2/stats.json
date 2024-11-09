@@ -1,0 +1,133 @@
+{
+    "dataset": "bank_marketing",
+    "algorithm": "resnet",
+    "config": {
+        "data": {
+            "cat_policy": "ohe",
+            "normalization": "quantile",
+            "path": "data/bank_marketing"
+        },
+        "model": {
+            "activation": "relu",
+            "d": 339,
+            "d_embedding": 348,
+            "d_hidden_factor": 3.825346478547088,
+            "hidden_dropout": 0.2209100377552283,
+            "n_layers": 8,
+            "normalization": "batchnorm",
+            "residual_dropout": 0.3058115601225451
+        },
+        "seed": 2,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 1024,
+            "lr": 0.003479353084932105,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": null,
+            "torch.version.cuda": "10.1",
+            "torch.backends.cudnn.version()": 7603,
+            "torch.cuda.nccl.version()": 2708,
+            "driver": "470.256.02"
+        }
+    },
+    "epoch_size": 142,
+    "n_parameters": 7066654,
+    "best_epoch": 17,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.9432893407232753,
+                "recall": 0.9635595871129183,
+                "f1-score": 0.9533167252077305,
+                "support": 31970
+            },
+            "1": {
+                "precision": 0.6681857020791797,
+                "recall": 0.5588375416865173,
+                "f1-score": 0.6086392528213777,
+                "support": 4198
+            },
+            "accuracy": 0.9165837204158372,
+            "macro avg": {
+                "precision": 0.8057375214012275,
+                "recall": 0.7611985643997179,
+                "f1-score": 0.7809779890145541,
+                "support": 36168
+            },
+            "weighted avg": {
+                "precision": 0.911358211685786,
+                "recall": 0.9165837204158372,
+                "f1-score": 0.9133101992986974,
+                "support": 36168
+            },
+            "roc_auc": 0.9458736588002421,
+            "score": 0.9165837204158372
+        },
+        "val": {
+            "0": {
+                "precision": 0.9413640824337586,
+                "recall": 0.9585311016737447,
+                "f1-score": 0.9498700334199777,
+                "support": 4003
+            },
+            "1": {
+                "precision": 0.6269662921348315,
+                "recall": 0.5386100386100386,
+                "f1-score": 0.5794392523364487,
+                "support": 518
+            },
+            "accuracy": 0.9104180491041804,
+            "macro avg": {
+                "precision": 0.784165187284295,
+                "recall": 0.7485705701418917,
+                "f1-score": 0.7646546428782132,
+                "support": 4521
+            },
+            "weighted avg": {
+                "precision": 0.9053415088051711,
+                "recall": 0.9104180491041804,
+                "f1-score": 0.907427400241197,
+                "support": 4521
+            },
+            "roc_auc": 0.9261321383479765,
+            "score": 0.9104180491041804
+        },
+        "test": {
+            "0": {
+                "precision": 0.9360651690940508,
+                "recall": 0.9602430995188656,
+                "f1-score": 0.9480000000000001,
+                "support": 3949
+            },
+            "1": {
+                "precision": 0.6666666666666666,
+                "recall": 0.5479930191972077,
+                "f1-score": 0.6015325670498084,
+                "support": 573
+            },
+            "accuracy": 0.9080053073861123,
+            "macro avg": {
+                "precision": 0.8013659178803587,
+                "recall": 0.7541180593580366,
+                "f1-score": 0.7747662835249043,
+                "support": 4522
+            },
+            "weighted avg": {
+                "precision": 0.9019286494366224,
+                "recall": 0.9080053073861123,
+                "f1-score": 0.9040977799468245,
+                "support": 4522
+            },
+            "roc_auc": 0.9298207468080152,
+            "score": 0.9080053073861123
+        }
+    },
+    "time": "0:10:27"
+}

@@ -1,0 +1,133 @@
+{
+    "dataset": "credit-g_algo_3",
+    "algorithm": "mlp_mha",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/credit-g_algo_3"
+        },
+        "model": {
+            "d_embedding": 363,
+            "d_layers": [
+                434,
+                397,
+                397,
+                177
+            ],
+            "dropout": 0.3268509357943775
+        },
+        "seed": 6,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0009679892329238409,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": null,
+            "torch.version.cuda": "10.1",
+            "torch.backends.cudnn.version()": 7603,
+            "torch.cuda.nccl.version()": 2708,
+            "driver": "470.256.02"
+        }
+    },
+    "epoch_size": 4,
+    "n_parameters": 123563877,
+    "best_epoch": 6,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.6244131455399061,
+                "recall": 0.5518672199170125,
+                "f1-score": 0.5859030837004405,
+                "support": 241
+            },
+            "1": {
+                "precision": 0.8160136286201022,
+                "recall": 0.8568872987477638,
+                "f1-score": 0.8359511343804539,
+                "support": 559
+            },
+            "accuracy": 0.765,
+            "macro avg": {
+                "precision": 0.7202133870800042,
+                "recall": 0.7043772593323882,
+                "f1-score": 0.7109271090404472,
+                "support": 800
+            },
+            "weighted avg": {
+                "precision": 0.7582939830921931,
+                "recall": 0.765,
+                "f1-score": 0.7606241591130999,
+                "support": 800
+            },
+            "roc_auc": 0.8128326368218292,
+            "score": 0.765
+        },
+        "val": {
+            "0": {
+                "precision": 0.7419354838709677,
+                "recall": 0.7419354838709677,
+                "f1-score": 0.7419354838709677,
+                "support": 31
+            },
+            "1": {
+                "precision": 0.8840579710144928,
+                "recall": 0.8840579710144928,
+                "f1-score": 0.8840579710144928,
+                "support": 69
+            },
+            "accuracy": 0.84,
+            "macro avg": {
+                "precision": 0.8129967274427303,
+                "recall": 0.8129967274427303,
+                "f1-score": 0.8129967274427303,
+                "support": 100
+            },
+            "weighted avg": {
+                "precision": 0.84,
+                "recall": 0.84,
+                "f1-score": 0.84,
+                "support": 100
+            },
+            "roc_auc": 0.8756428237494156,
+            "score": 0.84
+        },
+        "test": {
+            "0": {
+                "precision": 0.5769230769230769,
+                "recall": 0.5357142857142857,
+                "f1-score": 0.5555555555555555,
+                "support": 28
+            },
+            "1": {
+                "precision": 0.8243243243243243,
+                "recall": 0.8472222222222222,
+                "f1-score": 0.8356164383561645,
+                "support": 72
+            },
+            "accuracy": 0.76,
+            "macro avg": {
+                "precision": 0.7006237006237006,
+                "recall": 0.691468253968254,
+                "f1-score": 0.69558599695586,
+                "support": 100
+            },
+            "weighted avg": {
+                "precision": 0.7550519750519752,
+                "recall": 0.76,
+                "f1-score": 0.757199391171994,
+                "support": 100
+            },
+            "roc_auc": 0.7410714285714286,
+            "score": 0.76
+        }
+    },
+    "time": "0:04:58"
+}

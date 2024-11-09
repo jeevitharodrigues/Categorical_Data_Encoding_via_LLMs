@@ -1,0 +1,25 @@
+seed = 4
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/analcatdata'
+
+[model]
+activation = 'relu'
+d = 208
+d_embedding = 183
+d_hidden_factor = 1.87256669010782
+hidden_dropout = 0.0001978410198656411
+n_layers = 7
+normalization = 'batchnorm'
+residual_dropout = 0.3843768689036824
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 8.804356250518461e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0001850920240615944001850920240615944

@@ -1,0 +1,131 @@
+{
+    "dataset": "titanic_algo_3",
+    "algorithm": "mlp_mha",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/titanic_algo_3"
+        },
+        "model": {
+            "d_embedding": 152,
+            "d_layers": [
+                180,
+                100
+            ],
+            "dropout": 0.0
+        },
+        "seed": 0,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.004604344555992167,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": null,
+            "torch.version.cuda": "10.1",
+            "torch.backends.cudnn.version()": 7603,
+            "torch.cuda.nccl.version()": 2708,
+            "driver": "470.256.02"
+        }
+    },
+    "epoch_size": 5,
+    "n_parameters": 6301469,
+    "best_epoch": 3,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.976083707025411,
+                "recall": 0.9819548872180451,
+                "f1-score": 0.9790104947526237,
+                "support": 665
+            },
+            "1": {
+                "precision": 0.968421052631579,
+                "recall": 0.9583333333333334,
+                "f1-score": 0.9633507853403142,
+                "support": 384
+            },
+            "accuracy": 0.9733079122974261,
+            "macro avg": {
+                "precision": 0.972252379828495,
+                "recall": 0.9701441102756893,
+                "f1-score": 0.9711806400464689,
+                "support": 1049
+            },
+            "weighted avg": {
+                "precision": 0.9732786934055525,
+                "recall": 0.9733079122974261,
+                "f1-score": 0.9732780558447811,
+                "support": 1049
+            },
+            "roc_auc": 0.9913572994987467,
+            "score": 0.9733079122974261
+        },
+        "val": {
+            "0": {
+                "precision": 0.9333333333333333,
+                "recall": 1.0,
+                "f1-score": 0.9655172413793104,
+                "support": 70
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9166666666666666,
+                "f1-score": 0.9565217391304348,
+                "support": 60
+            },
+            "accuracy": 0.9615384615384616,
+            "macro avg": {
+                "precision": 0.9666666666666667,
+                "recall": 0.9583333333333333,
+                "f1-score": 0.9610194902548725,
+                "support": 130
+            },
+            "weighted avg": {
+                "precision": 0.9641025641025641,
+                "recall": 0.9615384615384616,
+                "f1-score": 0.9613654711105986,
+                "support": 130
+            },
+            "roc_auc": 0.9921428571428571,
+            "score": 0.9615384615384616
+        },
+        "test": {
+            "0": {
+                "precision": 0.9736842105263158,
+                "recall": 1.0,
+                "f1-score": 0.9866666666666666,
+                "support": 74
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.9642857142857143,
+                "f1-score": 0.9818181818181818,
+                "support": 56
+            },
+            "accuracy": 0.9846153846153847,
+            "macro avg": {
+                "precision": 0.986842105263158,
+                "recall": 0.9821428571428572,
+                "f1-score": 0.9842424242424241,
+                "support": 130
+            },
+            "weighted avg": {
+                "precision": 0.9850202429149798,
+                "recall": 0.9846153846153847,
+                "f1-score": 0.9845780885780885,
+                "support": 130
+            },
+            "roc_auc": 0.9992760617760618,
+            "score": 0.9846153846153847
+        }
+    },
+    "time": "0:00:10"
+}

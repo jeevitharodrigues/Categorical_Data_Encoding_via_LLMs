@@ -1,0 +1,24 @@
+seed = 6
+
+[data]
+cat_policy = 'ohe'
+path = 'data/dresses-sales'
+
+[fit]
+early_stopping_rounds = 50
+verbose = false
+
+[model]
+alpha = 0
+booster = 'gbtree'
+colsample_bylevel = 0.6507027358759576
+colsample_bytree = 0.8463472479821204
+gamma = 0
+lambda = 0
+learning_rate = 0.613468928280149
+max_depth = 5
+min_child_weight = 1.744072531926623e-07
+n_estimators = 2000
+n_jobs = -1
+subsample = 0.527883494295289
+tree_method = 'hist'

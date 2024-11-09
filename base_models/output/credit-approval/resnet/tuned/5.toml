@@ -1,0 +1,25 @@
+seed = 5
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/credit-approval'
+
+[model]
+activation = 'relu'
+d = 296
+d_embedding = 74
+d_hidden_factor = 2.707315986578528
+hidden_dropout = 0.2533257357444936
+n_layers = 4
+normalization = 'batchnorm'
+residual_dropout = 0.3332603519319425
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0001932101082955889
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

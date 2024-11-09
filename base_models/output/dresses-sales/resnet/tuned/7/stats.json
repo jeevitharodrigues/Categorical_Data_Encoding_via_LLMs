@@ -1,0 +1,125 @@
+{
+    "dataset": "dresses-sales",
+    "algorithm": "resnet",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/dresses-sales"
+        },
+        "model": {
+            "activation": "relu",
+            "d": 236,
+            "d_embedding": 111,
+            "d_hidden_factor": 3.145568099117258,
+            "hidden_dropout": 0.3013816880358219,
+            "n_layers": 4,
+            "normalization": "batchnorm",
+            "residual_dropout": 0.2118273996694524
+        },
+        "seed": 7,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0008663279761354553,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {},
+    "epoch_size": 2,
+    "n_parameters": 1714015,
+    "best_epoch": 2,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7984496124031008,
+                "recall": 0.4327731092436975,
+                "f1-score": 0.561307901907357,
+                "support": 238
+            },
+            "1": {
+                "precision": 0.5178571428571429,
+                "recall": 0.847953216374269,
+                "f1-score": 0.6430155210643016,
+                "support": 171
+            },
+            "accuracy": 0.6063569682151589,
+            "macro avg": {
+                "precision": 0.6581533776301218,
+                "recall": 0.6403631628089832,
+                "f1-score": 0.6021617114858293,
+                "support": 409
+            },
+            "weighted avg": {
+                "precision": 0.6811358904168935,
+                "recall": 0.6063569682151589,
+                "f1-score": 0.5954692781318986,
+                "support": 409
+            },
+            "roc_auc": 0.7496068602879749,
+            "score": 0.6063569682151589
+        },
+        "val": {
+            "0": {
+                "precision": 0.6666666666666666,
+                "recall": 0.43478260869565216,
+                "f1-score": 0.5263157894736841,
+                "support": 23
+            },
+            "1": {
+                "precision": 0.5666666666666667,
+                "recall": 0.7727272727272727,
+                "f1-score": 0.6538461538461539,
+                "support": 22
+            },
+            "accuracy": 0.6,
+            "macro avg": {
+                "precision": 0.6166666666666667,
+                "recall": 0.6037549407114624,
+                "f1-score": 0.5900809716599189,
+                "support": 45
+            },
+            "weighted avg": {
+                "precision": 0.6177777777777778,
+                "recall": 0.6,
+                "f1-score": 0.588663967611336,
+                "support": 45
+            },
+            "roc_auc": 0.5711462450592886,
+            "score": 0.6
+        },
+        "test": {
+            "0": {
+                "precision": 0.6470588235294118,
+                "recall": 0.3793103448275862,
+                "f1-score": 0.4782608695652174,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.3793103448275862,
+                "recall": 0.6470588235294118,
+                "f1-score": 0.4782608695652174,
+                "support": 17
+            },
+            "accuracy": 0.4782608695652174,
+            "macro avg": {
+                "precision": 0.513184584178499,
+                "recall": 0.513184584178499,
+                "f1-score": 0.4782608695652174,
+                "support": 46
+            },
+            "weighted avg": {
+                "precision": 0.5481082987917806,
+                "recall": 0.4782608695652174,
+                "f1-score": 0.4782608695652174,
+                "support": 46
+            },
+            "roc_auc": 0.5578093306288032,
+            "score": 0.4782608695652174
+        }
+    },
+    "time": "0:00:02"
+}

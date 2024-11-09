@@ -1,0 +1,25 @@
+seed = 7
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/kr-vs-kp'
+
+[model]
+activation = 'relu'
+d = 103
+d_embedding = 284
+d_hidden_factor = 1.846316989503202
+hidden_dropout = 0.3960150210200928
+n_layers = 5
+normalization = 'batchnorm'
+residual_dropout = 0.238670028034606
+
+[training]
+batch_size = 256
+eval_batch_size = 32
+lr = 1.228961322647247e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 4.516205353699927e-05

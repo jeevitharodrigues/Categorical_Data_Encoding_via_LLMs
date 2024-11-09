@@ -1,0 +1,27 @@
+seed = 9
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/kr-vs-kp'
+
+[model]
+activation = 'reglu'
+attention_dropout = 0.06504516027258544
+d_ffn_factor = 2.282242023418398
+d_token = 432
+ffn_dropout = 0.1599972023188427
+initialization = 'kaiming'
+n_heads = 8
+n_layers = 1
+prenormalization = true
+residual_dropout = 0.0
+
+[training]
+batch_size = 256
+eval_batch_size = 32
+lr = 2.76684223777323e-05
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0002354064360804708

@@ -1,0 +1,131 @@
+{
+    "dataset": "kr-vs-kp_algo_3",
+    "algorithm": "mlp_mha",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/kr-vs-kp_algo_3"
+        },
+        "model": {
+            "d_embedding": 152,
+            "d_layers": [
+                166,
+                26
+            ],
+            "dropout": 0.1686980802086342
+        },
+        "seed": 2,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0008800667561385505,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {
+        "devices": {
+            "CUDA_VISIBLE_DEVICES": null,
+            "torch.version.cuda": "10.1",
+            "torch.backends.cudnn.version()": 7603,
+            "torch.cuda.nccl.version()": 2708,
+            "driver": "470.256.02"
+        }
+    },
+    "epoch_size": 10,
+    "n_parameters": 156826679,
+    "best_epoch": 25,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.9991816693944353,
+                "recall": 0.9951100244498777,
+                "f1-score": 0.9971416904859125,
+                "support": 1227
+            },
+            "1": {
+                "precision": 0.9955022488755623,
+                "recall": 0.999247554552295,
+                "f1-score": 0.997371385655276,
+                "support": 1329
+            },
+            "accuracy": 0.9972613458528952,
+            "macro avg": {
+                "precision": 0.9973419591349988,
+                "recall": 0.9971787895010864,
+                "f1-score": 0.9972565380705942,
+                "support": 2556
+            },
+            "weighted avg": {
+                "precision": 0.9972685434673687,
+                "recall": 0.9972613458528952,
+                "f1-score": 0.9972611211901707,
+                "support": 2556
+            },
+            "roc_auc": 0.9998552753662115,
+            "score": 0.9972613458528952
+        },
+        "val": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.9735099337748344,
+                "f1-score": 0.9865771812080537,
+                "support": 151
+            },
+            "1": {
+                "precision": 0.976878612716763,
+                "recall": 1.0,
+                "f1-score": 0.9883040935672515,
+                "support": 169
+            },
+            "accuracy": 0.9875,
+            "macro avg": {
+                "precision": 0.9884393063583815,
+                "recall": 0.9867549668874172,
+                "f1-score": 0.9874406373876525,
+                "support": 320
+            },
+            "weighted avg": {
+                "precision": 0.9877890173410405,
+                "recall": 0.9875,
+                "f1-score": 0.987489206797755,
+                "support": 320
+            },
+            "roc_auc": 0.9981974215290568,
+            "score": 0.9875
+        },
+        "test": {
+            "0": {
+                "precision": 0.9932432432432432,
+                "recall": 0.9865771812080537,
+                "f1-score": 0.9898989898989898,
+                "support": 149
+            },
+            "1": {
+                "precision": 0.9883720930232558,
+                "recall": 0.9941520467836257,
+                "f1-score": 0.9912536443148688,
+                "support": 171
+            },
+            "accuracy": 0.990625,
+            "macro avg": {
+                "precision": 0.9908076681332495,
+                "recall": 0.9903646139958397,
+                "f1-score": 0.9905763171069293,
+                "support": 320
+            },
+            "weighted avg": {
+                "precision": 0.9906402223444374,
+                "recall": 0.990625,
+                "f1-score": 0.9906228833524752,
+                "support": 320
+            },
+            "roc_auc": 0.9996467679265277,
+            "score": 0.990625
+        }
+    },
+    "time": "0:20:14"
+}

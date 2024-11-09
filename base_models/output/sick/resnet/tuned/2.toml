@@ -1,0 +1,25 @@
+seed = 2
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/sick'
+
+[model]
+activation = 'relu'
+d = 310
+d_embedding = 126
+d_hidden_factor = 2.840858920403509
+hidden_dropout = 0.3881354102712599
+n_layers = 3
+normalization = 'batchnorm'
+residual_dropout = 0.0
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.004864724374345986
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

@@ -1,0 +1,25 @@
+seed = 6
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/dresses-sales'
+
+[model]
+activation = 'relu'
+d = 236
+d_embedding = 111
+d_hidden_factor = 3.145568099117258
+hidden_dropout = 0.3013816880358219
+n_layers = 4
+normalization = 'batchnorm'
+residual_dropout = 0.2118273996694524
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0008663279761354553
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

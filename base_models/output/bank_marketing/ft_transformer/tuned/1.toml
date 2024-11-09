@@ -1,0 +1,27 @@
+seed = 1
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/bank_marketing'
+
+[model]
+activation = 'reglu'
+attention_dropout = 0.1637753297849404
+d_ffn_factor = 1.042701491424939
+d_token = 176
+ffn_dropout = 0.4209548452479506
+initialization = 'kaiming'
+n_heads = 8
+n_layers = 4
+prenormalization = true
+residual_dropout = 0.0
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0001871965269901442
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1.580780572230625e-05

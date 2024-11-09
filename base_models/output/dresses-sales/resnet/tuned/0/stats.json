@@ -1,0 +1,125 @@
+{
+    "dataset": "dresses-sales",
+    "algorithm": "resnet",
+    "config": {
+        "data": {
+            "cat_policy": "indices",
+            "normalization": "quantile",
+            "path": "data/dresses-sales"
+        },
+        "model": {
+            "activation": "relu",
+            "d": 236,
+            "d_embedding": 111,
+            "d_hidden_factor": 3.145568099117258,
+            "hidden_dropout": 0.3013816880358219,
+            "n_layers": 4,
+            "normalization": "batchnorm",
+            "residual_dropout": 0.2118273996694524
+        },
+        "seed": 0,
+        "training": {
+            "batch_size": 256,
+            "eval_batch_size": 8192,
+            "lr": 0.0008663279761354553,
+            "n_epochs": 1000000000,
+            "optimizer": "adamw",
+            "patience": 16,
+            "weight_decay": 0.0
+        }
+    },
+    "environment": {},
+    "epoch_size": 2,
+    "n_parameters": 1714015,
+    "best_epoch": 5,
+    "metrics": {
+        "train": {
+            "0": {
+                "precision": 0.7966101694915254,
+                "recall": 0.7899159663865546,
+                "f1-score": 0.7932489451476793,
+                "support": 238
+            },
+            "1": {
+                "precision": 0.7109826589595376,
+                "recall": 0.7192982456140351,
+                "f1-score": 0.7151162790697675,
+                "support": 171
+            },
+            "accuracy": 0.7603911980440098,
+            "macro avg": {
+                "precision": 0.7537964142255316,
+                "recall": 0.7546071060002948,
+                "f1-score": 0.7541826121087234,
+                "support": 409
+            },
+            "weighted avg": {
+                "precision": 0.760809914476929,
+                "recall": 0.7603911980440098,
+                "f1-score": 0.7605822314574032,
+                "support": 409
+            },
+            "roc_auc": 0.8362941667895228,
+            "score": 0.7603911980440098
+        },
+        "val": {
+            "0": {
+                "precision": 0.6521739130434783,
+                "recall": 0.6521739130434783,
+                "f1-score": 0.6521739130434783,
+                "support": 23
+            },
+            "1": {
+                "precision": 0.6363636363636364,
+                "recall": 0.6363636363636364,
+                "f1-score": 0.6363636363636364,
+                "support": 22
+            },
+            "accuracy": 0.6444444444444445,
+            "macro avg": {
+                "precision": 0.6442687747035574,
+                "recall": 0.6442687747035574,
+                "f1-score": 0.6442687747035574,
+                "support": 45
+            },
+            "weighted avg": {
+                "precision": 0.6444444444444445,
+                "recall": 0.6444444444444445,
+                "f1-score": 0.6444444444444445,
+                "support": 45
+            },
+            "roc_auc": 0.6482213438735178,
+            "score": 0.6444444444444445
+        },
+        "test": {
+            "0": {
+                "precision": 0.6785714285714286,
+                "recall": 0.6551724137931034,
+                "f1-score": 0.6666666666666666,
+                "support": 29
+            },
+            "1": {
+                "precision": 0.4444444444444444,
+                "recall": 0.47058823529411764,
+                "f1-score": 0.45714285714285713,
+                "support": 17
+            },
+            "accuracy": 0.5869565217391305,
+            "macro avg": {
+                "precision": 0.5615079365079365,
+                "recall": 0.5628803245436105,
+                "f1-score": 0.5619047619047619,
+                "support": 46
+            },
+            "weighted avg": {
+                "precision": 0.5920462387853693,
+                "recall": 0.5869565217391305,
+                "f1-score": 0.5892339544513457,
+                "support": 46
+            },
+            "roc_auc": 0.592292089249493,
+            "score": 0.5869565217391305
+        }
+    },
+    "time": "0:00:02"
+}

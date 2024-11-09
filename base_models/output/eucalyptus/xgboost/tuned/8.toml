@@ -1,0 +1,24 @@
+seed = 8
+
+[data]
+cat_policy = 'ohe'
+path = 'data/eucalyptus'
+
+[fit]
+early_stopping_rounds = 50
+verbose = false
+
+[model]
+alpha = 0.0007476573580254821
+booster = 'gbtree'
+colsample_bylevel = 0.7663952296128965
+colsample_bytree = 0.9688269813495931
+gamma = 0
+lambda = 0
+learning_rate = 0.5183745037033529
+max_depth = 4
+min_child_weight = 1.537484829218048e-06
+n_estimators = 2000
+n_jobs = -1
+subsample = 0.7635302636669078
+tree_method = 'gpu_hist'

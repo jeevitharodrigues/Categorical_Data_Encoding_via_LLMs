@@ -1,0 +1,24 @@
+seed = 2
+
+[data]
+cat_policy = 'ohe'
+path = 'data/cylinder-bands'
+
+[fit]
+early_stopping_rounds = 50
+verbose = false
+
+[model]
+alpha = 1.43063630563962e-06
+booster = 'gbtree'
+colsample_bylevel = 0.5516328599335468
+colsample_bytree = 0.7184871022069426
+gamma = 0
+lambda = 0
+learning_rate = 0.3433573948867417
+max_depth = 5
+min_child_weight = 1.193008746386317e-08
+n_estimators = 2000
+n_jobs = -1
+subsample = 0.8923312311407093
+tree_method = 'gpu_hist'

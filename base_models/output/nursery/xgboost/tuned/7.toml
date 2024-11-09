@@ -1,0 +1,24 @@
+seed = 7
+
+[data]
+cat_policy = 'ohe'
+path = 'data/nursery'
+
+[fit]
+early_stopping_rounds = 50
+verbose = false
+
+[model]
+alpha = 7.175057998587586e-05
+booster = 'gbtree'
+colsample_bylevel = 0.8877313863529284
+colsample_bytree = 0.8144794490202333
+gamma = 0
+lambda = 0
+learning_rate = 0.05614935624429934
+max_depth = 8
+min_child_weight = 1.320819780441117e-08
+n_estimators = 2000
+n_jobs = -1
+subsample = 0.838367590264344
+tree_method = 'gpu_hist'

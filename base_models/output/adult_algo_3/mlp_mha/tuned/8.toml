@@ -1,0 +1,20 @@
+seed = 8
+
+[data]
+cat_policy = 'ohe'
+normalization = 'quantile'
+path = 'data/adult_algo_3'
+
+[model]
+d_embedding = 462
+d_layers = [54, 397, 397, 122]
+dropout = 0.1285521852733068
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0002069209865653834
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

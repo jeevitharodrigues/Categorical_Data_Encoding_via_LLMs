@@ -1,0 +1,20 @@
+seed = 4
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/dresses-sales_algo_3'
+
+[model]
+d_embedding = 236
+d_layers = [ 118, 193, 193, 193, 193, 193, 193, 324 ]
+dropout = 0.2724415914984484
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0001866226697651795
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1.422804145489075e-05

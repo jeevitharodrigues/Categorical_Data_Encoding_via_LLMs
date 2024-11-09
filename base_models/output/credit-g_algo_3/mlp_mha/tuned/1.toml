@@ -1,0 +1,20 @@
+seed = 1
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/credit-g_algo_3'
+
+[model]
+d_embedding = 363
+d_layers = [ 434, 397, 397, 177 ]
+dropout = 0.3268509357943775
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0009679892329238409
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 0.0

@@ -1,0 +1,27 @@
+seed = 8
+
+[data]
+cat_policy = 'indices'
+normalization = 'quantile'
+path = 'data/titanic'
+
+[model]
+activation = 'reglu'
+attention_dropout = 0.0991921981669352
+d_ffn_factor = 2.305595224363339
+d_token = 248
+ffn_dropout = 0.06196889525068081
+initialization = 'kaiming'
+n_heads = 8
+n_layers = 4
+prenormalization = true
+residual_dropout = 0.06880133565470853
+
+[training]
+batch_size = 256
+eval_batch_size = 8192
+lr = 0.0001176312611935439
+n_epochs = 1000000000
+optimizer = 'adamw'
+patience = 16
+weight_decay = 1.646651173030599e-05
