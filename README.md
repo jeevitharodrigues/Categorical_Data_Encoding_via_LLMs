@@ -7,9 +7,9 @@ This guide provides instructions on setting up the project environment, preparin
 ## 1. Data Preparation
 
 1. **Download Data**: Download the processed benchmark data from the following URL:
-   ```
+
    ![Download Data](https://drive.google.com/drive/folders/1hBkz8CGcRTdsb8LcTi56v75a_xGI1pLH?usp=sharing)
-   ```
+
    
 2. **Upload Data**: Upload the downloaded data to Google Drive in a folder named `Benchmark Data`.
 
