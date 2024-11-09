@@ -1,19 +1,20 @@
 # Project Setup and Execution Guide
 
-This guide provides instructions on setting up the project environment, preparing data, running specific notebooks, and configuring GPU clusters for optimal performance.
+This guide provides instructions for setting up the project environment, preparing data, running specific notebooks, and configuring GPU clusters for optimal performance.
 
 ---
 
 ## 1. Data Preparation
 
-1. **Download Data**: Download the processed benchmark data from the following URL:
+1. **Download Data**: Obtain the pre-processed benchmark data from the following link:
 
-   ![Download Data](https://drive.google.com/drive/folders/1hBkz8CGcRTdsb8LcTi56v75a_xGI1pLH?usp=sharing)
+   [Download Data](https://drive.google.com/drive/folders/1hBkz8CGcRTdsb8LcTi56v75a_xGI1pLH?usp=sharing)
 
-   
-2. **Upload Data**: Upload the downloaded data to Google Drive in a folder named `Benchmark Data`.
+2. **Upload Data**: Once downloaded, upload the data to Google Drive in a folder named `Benchmark Data`.
 
----
+--- 
+
+Let me know if you need further details or additional sections.
 
 ## 2. Running Notebooks for Embedding Generation
 
