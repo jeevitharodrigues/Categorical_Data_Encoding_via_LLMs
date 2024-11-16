@@ -10,7 +10,7 @@ This guide provides instructions for setting up the project environment, prepari
 
    [Download Data](https://drive.google.com/drive/folders/1hBkz8CGcRTdsb8LcTi56v75a_xGI1pLH?usp=sharing)
 
-2. **Upload Data**: Once downloaded, upload the data to Google Drive in a folder named `Benchmark Data`.
+2. **Upload Data**: Once downloaded, upload the data to Google Drive in a folder named `Input Data`.
 
 --- 
 
